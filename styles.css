@@ -1,3 +1,15 @@
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+/*
 body {
     padding: 10px;
     margin: 0 auto;
@@ -11,6 +23,7 @@ body {
     text-align: center;
     margin:0;
     background:  #404040;
+    border: 2px solid red;
     }
 
 ul li {
@@ -74,7 +87,7 @@ footer a:hover {
  }
  
  /*Start Media Queries*/
-
+/**
  @media (max-width: 800px) {
      body{
          background: teal;
@@ -97,4 +110,334 @@ footer a:hover {
 
   }
 
+ **/
+body {
+    background: teal;
+    border: 5px solid gray;
+}
+
+ .container {
+     width: 70%;
+     margin: 0 auto;
+     border: 25px solid gray;
  }
+
+ .name {
+     Font-size: 3rem;
+     padding:60px 0 0 30px;
+     color: white}
+
+ 
+
+ header {
+     width: 100%;
+     height: 5vh;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     margin-bottom: 100px;
+ }
+
+ header nav {
+     width: 50%;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 auto;
+ }
+
+ header nav a {
+     font-size: 1.8rem;
+     color: black;
+     text-decoration: none;
+     padding:80px 0 0 30px;
+     letter-spacing: 2px;
+ }
+
+ .banner {
+     height: 600px;
+ }
+
+ .banner-container {
+     width: 50%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: column;
+     margin: 0 auto;
+     height: 100%;
+     padding-bottom: 80px;
+ }
+
+ .banner-container h2 {
+    text-align: center;
+    font-size:4rem;
+    height: 10%;
+    padding-bottom: 60px;
+ }
+
+ .banner-container figure {
+     height: 80%;
+     width: 50%;
+ }
+
+ .banner-container figure img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .my-projects{
+     padding-bottom: 40px;
+ }
+
+ .my-projects h3 {
+     text-align: center;
+     font-size: 3.5rem;
+     padding-bottom: 20px;
+ }
+
+ .my-projects .desc {
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ .my-projects .desc p {
+     font-size: 2rem;
+     padding-bottom: 30px;
+ }
+
+
+ .img-container {
+     width: 65%;
+     min-height: 300px;
+     height: 350px;
+     margin: 0 auto;
+     overflow-y: scroll;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+ .img-container figure {
+     width: 300px;
+     height: 300px;
+     margin-bottom: 30px;
+ }
+
+ 
+
+ .img-container figure img {
+     width: 100%;
+     height:100%;
+     object-fit: cover;
+ }
+
+ footer h4{
+    text-align: center;
+    padding-top: 15px;
+    color:white;
+    font-size:3rem;
+}
+
+
+
+
+
+/*Start of Media Querie*/
+/**Start 800px**/
+
+@media (max-width: 800px){
+    body {
+        background: black;
+        color:white;
+        }
+
+    header {
+        width:10%;
+        height:10%;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    header:hover {
+        display: block;
+        
+    }
+    
+    header nav{
+        height:10px;
+        width: 0;
+        flex-direction: column;
+        margin:30%;
+    }
+
+        header nav a{
+            border:3px solid gray;
+            text-align: center;
+            padding: 1%;
+            color:white;
+            
+        }
+
+        nav a{
+            padding: 0;
+            
+        }
+
+        .name {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .logo {
+        padding-top:70%;
+    }
+
+    .banner-container figure {
+        height:60%;
+        width:100%;
+        border: 4px dotted royalblue;
+    }
+
+    .my-projects p {
+        color: dodgerblue;
+        font-weight: 600;
+    }
+    
+    
+    
+    footer h4{
+    background:teal;
+    border:2px solid white;
+    font-size:2.5rem;
+    }
+
+/**Start 500px**/
+
+
+@media (max-width: 500px) {
+    body {
+        background: lightblue;
+        }
+
+    header {
+        width:10%;
+        height:10%;
+        flex-direction: column;
+        margin:0 auto;
+    }
+
+    header:hover {
+        display: block;
+        
+    }
+    
+    header nav{
+        height:10px;
+        width: 0;
+        flex-direction: column;
+        margin:30%;
+    }
+
+        header nav a{
+            border:3px solid gray;
+            text-align: center;
+            padding: 1%;
+            
+        }
+
+        nav a{
+            padding: 0;
+        }
+
+        .name {
+        font-size: 5rem;
+        text-align: center;
+        color: midnightblue;
+    }
+
+    .logo {
+        padding-top:70%;
+
+
+
+    .banner-container figure {
+        height:60%;
+        width:100%;
+        border: 4px dotted royalblue;
+    }
+
+    .my-projects p {
+        color: navy;
+        font-weight: 600;
+    }
+    
+    
+    footer h4{
+    background:teal;
+    border:2px solid white;
+    font-size:2.5rem;
+    }
+
+    
+      
+  
+
+    
+    
+    
+    
+    
+    
+    /*header {
+        height: 10px;
+        margin-bottom: 30px;
+        width:100%;
+        border: 2px solid blue;
+        font-size:  2.4rem;
+        display: table-column;/*
+
+
+
+
+
+
+
+
+
+    /*.name {
+            border: 2px solid red;
+        }
+
+    header nav{
+    flex-direction: column;
+            pa
+        }
+
+        nav a {
+        border:2px #DDDDDD;
+    }
+
+
+
+    .banner-container h2 {
+        font-size:4rem;
+        color: teal;
+    }
+
+
+ .banner-container figure img {
+     width:300%;
+     
+ 
+    
+    .contact {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px
+        }*/
+
+
+
